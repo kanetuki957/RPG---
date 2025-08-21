@@ -1,0 +1,45 @@
+/* ===== タイトル背景画像 ===== */
+.TitleBack {
+  position: absolute;
+  width: 100vw;     
+  height: 100vh;    
+  object-fit: cover;
+  z-index: 1;      
+}
+
+/* ===== タイトルロゴ ===== */
+.TitleLogo {
+  position: absolute;
+  z-index: 2;       
+  top: 80px;        
+  left: 450px;      
+  object-fit: cover;
+  text-align: center;                       /*ロゴの中央寄せ*/
+}
+
+/* ===== 「PRESS START」風の点滅テキスト ===== */
+.PlayBotton {
+  position: absolute;
+  z-index: 3;              
+  bottom: 200px;          
+  left: 50%;            
+  transform: translateX(-50%);
+
+  font-family: 'Press Start 2P', monospace; /* レトロゲーム風フォント */
+  font-size: 2em;          
+  color: white;            
+  text-shadow: 0 0 8px #000;             /* 文字の縁取り*/
+
+  /* 点滅アニメーション */
+  animation: blink 1s steps(2, start) infinite;
+
+  cursor: pointer;                         /* マウスを乗せたときポインタ表示 */
+}
+
+/* ===== 点滅アニメーション定義 ===== */
+@keyframes blink {
+  to {
+    visibility: hidden;                     /* 0.5秒ごとに表示/非表示を切り替え */
+  }
+}
+
