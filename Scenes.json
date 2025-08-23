@@ -1,0 +1,87 @@
+{
+  "title": "黒鉄の覇者",
+  "scenes": [
+    {
+      "id": 1,
+      "text": "──黒き鉄の時代。世界は戦火に包まれ、人々は明日の希望すら失っていた。",
+      "effect": "fadeIn",
+      "wait": 2000,
+      "bgm": "prologue.mp3"
+    },
+    {
+      "id": 2,
+      "text": "あなたは辺境の村に生まれた若き戦士。故郷を滅ぼされた復讐と、世界を救う使命を胸に旅立つ。",
+      "effect": "none",
+      "wait": 3000
+    },
+    {
+      "id": 3,
+      "text": "道を進むと、霧の中から気配が…",
+      "effect": "suspense",
+      "wait": 1500,
+      "se": "enemy_appear.wav"
+    },
+    {
+      "id": 4,
+      "text": "【選択肢】\n1. 剣を抜く\n2. 相手の正体を確かめる",
+      "effect": "choice",
+      "options": [
+        { "text": "剣を抜く", "nextScene": 5 },
+        { "text": "正体を確かめる", "nextScene": 6 }
+      ]
+    },
+    {
+      "id": 5,
+      "text": "剣を抜いた瞬間、霧の中から魔獣が飛びかかってきた！",
+      "effect": "shake",
+      "se": "roar.wav",
+      "bgm": "battle_theme.mp3",
+      "nextScene": 7
+    },
+    {
+      "id": 6,
+      "text": "霧の中から現れたのは、旅の僧侶だった。彼はあなたに警告する──「この先に待つのは死か、栄光か」。",
+      "effect": "fadeIn",
+      "bgm": "mystic_theme.mp3",
+      "nextScene": 8
+    },
+    {
+      "id": 7,
+      "text": "激しい戦闘の末、魔獣を退ける。だが腕に傷を負い、前途の険しさを思い知らされる…。",
+      "effect": "redFlash",
+      "wait": 2500,
+      "nextScene": 9
+    },
+    {
+      "id": 8,
+      "text": "僧侶は「黒鉄の覇者」を名乗る者の存在を語る。彼こそ、この世界を混乱に陥れた元凶だという。",
+      "effect": "none",
+      "wait": 3000,
+      "nextScene": 9
+    },
+    {
+      "id": 9,
+      "text": "──旅の果て。幾多の戦いと選択を経て、あなたはついに黒鉄の覇者と対峙する。",
+      "effect": "fadeIn",
+      "bgm": "final_battle.mp3",
+      "wait": 4000,
+      "nextScene": 10
+    },
+    {
+      "id": 10,
+      "text": "熾烈な戦いの末、覇者は倒れた。だが彼は最後に笑う──「真の闇は人の心に宿る…」。",
+      "effect": "shake",
+      "se": "death.wav",
+      "wait": 3000,
+      "nextScene": 11
+    },
+    {
+      "id": 11,
+      "text": "世界に再び朝が訪れる。あなたの剣は、闇を払う希望となった。",
+      "effect": "fadeOut",
+      "bgm": "ending.mp3",
+      "wait": 5000,
+      "end": true
+    }
+  ]
+}
