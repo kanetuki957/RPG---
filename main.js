@@ -1,21 +1,8 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <title>JSONシナリオテスト</title>
-  <style>
-    #game { padding: 20px; font-size: 20px; }
-    .choice { margin: 10px 0; cursor: pointer; color: blue; }
-  </style>
-</head>
-<body>
-  <div id="game"></div>
-  <script>
-    let scenario;
+let scenario;
     let currentSceneId = 1;
 
     async function loadScenario() {
-      const res = await fetch("scenario.json");
+      const res = await fetch("Scenes.json");
       scenario = await res.json();
       showScene(currentSceneId);
     }
@@ -44,6 +31,3 @@
     }
 
     loadScenario();
-  </script>
-</body>
-</html>

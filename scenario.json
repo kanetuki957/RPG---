@@ -1,0 +1,29 @@
+{
+  "title": "冒険の始まり",
+  "scenes": [
+    {
+      "id": 1,
+      "text": "──ここは小さな村。",
+      "character": "ナレーション",
+      "bg": "village.png",
+      "bgm": "opening.mp3",
+      "next": 2
+    },
+    {
+      "id": 2,
+      "text": "おはよう、勇者さま！",
+      "character": "村人A",
+      "bg": "village.png",
+      "next": 3
+    },
+    {
+      "id": 3,
+      "text": "今日は何をする？",
+      "character": "村人A",
+      "choices": [
+        { "text": "森に行く", "next": 10 },
+        { "text": "宿屋に行く", "next": 20 }
+      ]
+    }
+  ]
+}
